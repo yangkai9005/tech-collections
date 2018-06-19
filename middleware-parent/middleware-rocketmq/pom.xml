@@ -5,12 +5,5 @@
     <artifactId>middleware-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>middleware-rabbitmq</artifactId>
-  <dependencies>
-  <dependency>
-    <groupId>com.rabbitmq</groupId>
-    <artifactId>amqp-client</artifactId>
-    <version>5.2.0</version>
-</dependency>
-  </dependencies>
+  <artifactId>middleware-rocketmq</artifactId>
 </project>

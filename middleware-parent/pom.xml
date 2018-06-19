@@ -7,5 +7,6 @@
   <modules>
   	<module>middleware-rabbitmq</module>
   	<module>middleware-redis</module>
+  	<module>middleware-rocketmq</module>
   </modules>
 </project>
