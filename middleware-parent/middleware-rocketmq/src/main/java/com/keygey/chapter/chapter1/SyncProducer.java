@@ -10,13 +10,12 @@ public class SyncProducer {
 
 	public static void main(String[] args) throws Exception {
 		DefaultMQProducer producer = new DefaultMQProducer("TEST_ROCKET_MQ_GROUP");
-		producer.setNamesrvAddr("193.112.91.102:9876");
+		producer.setNamesrvAddr("localhost:9876");
 		producer.start();
-		producer.getDefaultMQProducerImpl().registerCheckForbiddenHook(null);
 		for (int i = 0; i < 100; i++) {
-			 Message msg = new Message("TopicTest" /* Topic */,
+			 Message msg = new Message("TopicTestA" /* Topic */,
 		                "TagA" /* Tag */,
-		                ("Hello RocketMQ " +
+		                ("Test RocketMQ " +
 		                    i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
 		            );
 			 SendResult result = producer.send(msg);
